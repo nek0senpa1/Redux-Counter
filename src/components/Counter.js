@@ -10,12 +10,12 @@ class Counter extends Component {
         // Upon clicking these buttons, the count
         // should decrement or increment accordingly
         return (
-            <p>
+            <p >
                 Clicked: {this.props.count} times
-                <button onClick={() => this.props.increment }>
+                <button onClick={(e) => this.props.increment(e) }>
                     +
                 </button>
-                <button onClick={() => this.props.decrement }>
+                <button onClick={(e) => this.props.decrement(e) }>
                     -
                 </button>
                  
